@@ -1,0 +1,59 @@
+@import "../../styles/index.scss";
+
+.about {
+  height: 100vh;
+  background-color: $white;
+}
+
+.head {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  & .title {
+    padding-top: 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  & .h3Title {
+    font-weight: 200;
+    font-size: 0.9rem;
+    font-style: italic;
+    padding-bottom: 1rem;
+  }
+}
+
+.illustration {
+  display: flex;
+  justify-content: center;
+
+  & .picture {
+    width: 320px;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+.content {
+  margin-top: 1rem;
+
+  & .subtitle {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+  }
+  & .text {
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    text-justify: inter-word;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}

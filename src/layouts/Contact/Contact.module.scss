@@ -1,0 +1,75 @@
+@import "../../styles/index.scss";
+
+.contact {
+  height: 100vh;
+  background-color: $white;
+}
+
+.head {
+  margin-top: 2.5rem;
+  line-height: 1.5rem;
+
+  & .title {
+    padding-top: 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  & .subtitle {
+    font-weight: 200;
+    font-size: 0.9rem;
+    font-style: italic;
+    padding-bottom: 1rem;
+  }
+}
+
+.illustration {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  & .picture {
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+.content {
+  margin-top: 1.5rem;
+
+  & .title {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  & .text {
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    text-justify: inter-word;
+
+    & .mail {
+      text-decoration: 1.4px $light-green wavy underline;
+    }
+  }
+}
+
+.network {
+  height: 100px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.copyright {
+  margin: 2.5rem 0;
+  font-size: 0.6rem;
+  text-align: center;
+
+  & span {
+    color: red;
+    font-size: 0.8rem;
+  }
+}

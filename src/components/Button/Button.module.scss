@@ -1,0 +1,15 @@
+@import "../../styles/index.scss";
+
+.button {
+  all: unset;
+  background-color: $light-green;
+  padding: 0.8em;
+  margin-top: 2em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  & .iconButton {
+    margin-left: 1em;
+  }
+}
