@@ -51,9 +51,53 @@
     line-height: 1.2rem;
     text-justify: inter-word;
   }
+  & .stats {
+    display: none;
+  }
 }
 
 .button {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-areas:
+      "illustration head"
+      "illustration content"
+      "illustration button";
+    & .head {
+      margin: auto;
+      grid-area: head;
+    }
+    & .illustration {
+      width: 400px;
+      height: 225px;
+      grid-area: illustration;
+    }
+    & .content {
+      grid-area: content;
+      & .stats {
+        height: 70px;
+        margin: 1rem 0;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        & .number {
+          margin-bottom: 1rem;
+          font-weight: 500;
+        }
+      }
+    }
+    & .button {
+      grid-area: button;
+    }
+  }
 }
