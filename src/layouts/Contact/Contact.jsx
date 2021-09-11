@@ -23,8 +23,8 @@ const Contact = () => {
               alt="contactAvatar"
             />
           </div>
+          <h1 className={s.title}>Contact</h1>
           <div className={s.content}>
-            <h1 className={s.title}>Contact</h1>
             <p className={s.text}>
               Vous pouvez me contacter par{" "}
               <a className={s.mail} href="mailto:marion.bricout@protonmail.com">

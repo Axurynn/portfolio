@@ -35,14 +35,14 @@
   }
 }
 
-.content {
+.title {
   margin-top: 1.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
 
-  & .title {
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-  }
+.content {
   & .text {
     font-weight: 300;
     font-size: 0.9rem;
@@ -53,14 +53,14 @@
       text-decoration: 1.4px $light-green wavy underline;
     }
   }
-}
 
-.network {
-  height: 100px;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-around;
-  width: 200px;
+  & .network {
+    height: 100px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+  }
 }
 
 .copyright {
@@ -74,21 +74,46 @@
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .division {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    background-color: $dark-green;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 10px;
+    color: $white;
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 550px 450px;
+    grid-template-areas:
+      "title illustration"
+      "head illustration"
+      "content illustration";
 
     & .head {
-      order: 1;
+      margin-top: 0;
+      padding: 0 2rem;
+      grid-area: head;
     }
     & .illustration {
-      align-self: flex-end;
-      order: 3;
+      grid-area: illustration;
+      height: 238.45px;
+    }
+    & .title {
+      grid-area: title;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 1.8rem;
     }
     & .content {
-      order: 2;
+      padding: 2rem;
+      grid-area: content;
+      & .network {
+        height: 50px;
+      }
+      & * {
+        fill: $white;
+      }
     }
   }
 }
