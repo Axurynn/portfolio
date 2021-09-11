@@ -5,6 +5,18 @@ import KeyBoard from "../../assets/keyboard.jpg";
 import { ReactComponent as Arrow } from "../../assets/down-arrow.svg";
 
 const About = () => {
+  const today = new Date();
+  const firstDay = new Date("2021-05-24");
+  const numberOfCoffees = () => {
+    return Math.round(
+      (2 * (today.getTime() - firstDay.getTime())) / (1000 * 3600 * 24)
+    );
+  };
+  const numberOfCodingHours = () => {
+    return Math.round(
+      ((today.getTime() - firstDay.getTime()) / (1000 * 3600 * 24 * 7)) * 5 * 7
+    );
+  };
   return (
     <>
       {/* code here */}
@@ -31,22 +43,12 @@ const About = () => {
             </p>
             <div className={s.stats}>
               <div className={s.coffees}>
-                <p className={s.number}>146</p>
+                <p className={s.number}>{numberOfCoffees()}</p>
                 <p className={s.text}>cafés</p>
               </div>
-              <div className={s.codingLines}>
-                <p className={s.number}>+500k</p>
-                <p className={s.text}>
-                  lignes <br />
-                  de code
-                </p>
-              </div>
               <div className={s.vscHours}>
-                <p className={s.number}>405</p>
-                <p className={s.text}>
-                  heures <br />
-                  sur VSCode
-                </p>
+                <p className={s.number}>{numberOfCodingHours()}</p>
+                <p className={s.text}>heures de code</p>
               </div>
             </div>
           </div>
