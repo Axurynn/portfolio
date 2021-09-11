@@ -1,6 +1,17 @@
-$black: #000;
-$white: #fff;
-$dark-green: #0a1b1b;
-$scroll-to-top-dark: #162521;
-$scroll-to-top-light: #050f0f;
-$light-green: #9eefe5;
+.theme-light {
+  --text-color: #0a1b1b;
+  --bg-color: #fff;
+  --hover-color: #0a1b1b;
+  --scroll-color: #162521;
+  --decoration-color: #9eefe5;
+  --shadow-color: rgb(226, 226, 226);
+}
+
+.theme-dark {
+  --text-color: #fff;
+  --bg-color: #0a1b1b;
+  --hover-color: #9eefe5;
+  --scroll-color: #050f0f;
+  --decoration-color: #9eefe5;
+  --shadow-color: #091d1d;
+}

@@ -3,6 +3,8 @@ import s from "./About.module.scss";
 import Button from "../../components/Button/Button";
 import KeyBoard from "../../assets/keyboard.jpg";
 import { ReactComponent as Arrow } from "../../assets/down-arrow.svg";
+import { AiFillCode } from "react-icons/ai";
+import { GiCoffeeCup } from "react-icons/gi";
 
 const About = () => {
   const today = new Date();
@@ -23,7 +25,6 @@ const About = () => {
       <div className={s.about}>
         <div className={s.head}>
           <h1 className={s.title}>A Propos</h1>
-          <h3 className={s.h3Title}>Introduction</h3>
         </div>
         <div className={s.container}>
           <div className={s.illustration}>
@@ -44,11 +45,21 @@ const About = () => {
             <div className={s.stats}>
               <div className={s.coffees}>
                 <p className={s.number}>{numberOfCoffees()}</p>
-                <p className={s.text}>cafés</p>
+                <p className={s.text}>
+                  cafés{" "}
+                  <span>
+                    <GiCoffeeCup />
+                  </span>
+                </p>
               </div>
               <div className={s.vscHours}>
                 <p className={s.number}>{numberOfCodingHours()}</p>
-                <p className={s.text}>heures de code</p>
+                <p className={s.text}>
+                  heures de code{" "}
+                  <span>
+                    <AiFillCode />
+                  </span>
+                </p>
               </div>
             </div>
           </div>

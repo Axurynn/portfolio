@@ -2,13 +2,16 @@
 
 .button {
   all: unset;
-  background-color: $light-green;
+  background-color: var(--decoration-color);
   padding: 0.8em;
   margin-top: 2em;
   border-radius: 10px;
   display: flex;
   align-items: center;
   cursor: pointer;
+  & span {
+    color: #000;
+  }
   & .iconButton {
     margin-left: 1em;
   }

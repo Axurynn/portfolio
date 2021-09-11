@@ -2,7 +2,7 @@
 
 .contact {
   height: 100vh;
-  background-color: $white;
+  background-color: var(--bg-color);
 }
 
 .head {
@@ -50,7 +50,7 @@
     text-justify: inter-word;
 
     & .mail {
-      text-decoration: 1.4px $light-green wavy underline;
+      text-decoration: 1.4px var(--decoration-color) wavy underline;
     }
   }
 
@@ -60,6 +60,9 @@
     display: flex;
     justify-content: space-around;
     width: 200px;
+    & svg path {
+      fill: var(--text-color);
+    }
   }
 }
 
@@ -76,11 +79,11 @@
 
 @media screen and (min-width: 1000px) {
   .division {
-    background-color: $dark-green;
+    background-color: var(--hover-color);
     padding: 1rem;
     align-items: center;
     border-radius: 10px;
-    color: $white;
+    color: var(--bg-color);
     width: 1000px;
     margin: auto;
     display: grid;
@@ -110,9 +113,12 @@
       grid-area: content;
       & .network {
         height: 50px;
+        & svg path {
+          fill: var(--bg-color);
+        }
       }
       & * {
-        fill: $white;
+        fill: var(--bg-color);
       }
     }
   }
