@@ -2,7 +2,7 @@
 
 .header {
   height: 100vh;
-  background-color: $white;
+  background-color: var(--bg-color);
 }
 
 .head {
@@ -18,6 +18,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  & svg path {
+    fill: var(--text-color);
+  }
 }
 
 .avatar {
