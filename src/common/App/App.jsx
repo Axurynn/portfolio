@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import s from "./App.module.scss";
 import { keepTheme } from "../../utils/themes";
 
+import Skills from "../../layouts/Skills/Skills";
 import Modal from "../../components/Modal/Modal";
 import Header from "../../layouts/Header/Header";
 import About from "../../layouts/About/About";
@@ -20,6 +21,7 @@ const App = () => {
       <Modal />
       <Header />
       <About />
+      <Skills />
       <Contact />
       <Footer />
     </div>
