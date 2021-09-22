@@ -1,0 +1,47 @@
+.bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+.container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  position: fixed;
+  bottom: 50.4px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0px -2px 5px var(--shadow-color);
+
+  & .links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 60px;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    & .link {
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+    }
+
+    & .link svg path {
+      fill: var(--text-color);
+    }
+  }
+
+  & .closeModal {
+    fill: var(--text-color);
+    text-align: right;
+    margin-bottom: 1rem;
+  }
+}
