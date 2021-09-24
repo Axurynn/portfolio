@@ -6,7 +6,7 @@ import { ReactComponent as Server } from "../../assets/server.svg";
 const Skills = () => {
   const completedBarFront = [
     {
-      completed: 80,
+      completed: 85,
       text: "JavaScript",
     },
     {
@@ -16,19 +16,19 @@ const Skills = () => {
   ];
   const completedBarBack = [
     {
-      completed: 75,
+      completed: 80,
       text: "NodeJS",
     },
     {
-      completed: 70,
+      completed: 80,
       text: "Express",
     },
     {
-      completed: 60,
+      completed: 70,
       text: "SQL",
     },
     {
-      completed: 60,
+      completed: 70,
       text: "PostGreSQL",
     },
     {

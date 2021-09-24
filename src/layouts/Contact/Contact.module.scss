@@ -9,12 +9,6 @@
   margin-top: 2.5rem;
   line-height: 1.5rem;
 
-  & .title {
-    padding-top: 2rem;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-  }
   & .subtitle {
     font-weight: 200;
     font-size: 0.9rem;
@@ -35,7 +29,7 @@
   }
 }
 
-.title {
+.contactTitle {
   margin-top: 1.5rem;
   font-weight: 500;
   font-size: 1.2rem;
@@ -104,9 +98,6 @@
     }
     & .title {
       grid-area: title;
-      font-weight: 700;
-      font-size: 1.5rem;
-      line-height: 1.8rem;
     }
     & .content {
       padding: 2rem;

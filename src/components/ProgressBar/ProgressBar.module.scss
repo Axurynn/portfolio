@@ -1,12 +1,6 @@
 .progressBarText {
   width: 50%;
   margin: 1rem 0 0.5rem 0;
-  display: flex;
-  justify-content: space-between;
-
-  & .percent {
-    text-align: right;
-  }
 }
 
 .progressBarContainer {

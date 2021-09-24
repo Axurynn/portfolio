@@ -23,7 +23,7 @@ const Contact = () => {
               alt="contactAvatar"
             />
           </div>
-          <h1 className={s.title}>Contact</h1>
+          <h2 className={s.contactTitle}>Contact</h2>
           <div className={s.content}>
             <p className={s.text}>
               Vous pouvez me contacter par{" "}
