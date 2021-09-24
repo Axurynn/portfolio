@@ -10,6 +10,18 @@ const Skills = () => {
       text: "JavaScript",
     },
     {
+      completed: 80,
+      text: "HTML",
+    },
+    {
+      completed: 80,
+      text: "CSS",
+    },
+    {
+      completed: 30,
+      text: "React",
+    },
+    {
       completed: 75,
       text: "Git",
     },
@@ -35,10 +47,6 @@ const Skills = () => {
       completed: 50,
       text: "Sequelize",
     },
-    {
-      completed: 75,
-      text: "Git",
-    },
   ];
   return (
     <>
@@ -52,7 +60,7 @@ const Skills = () => {
               <span>
                 <CurlyBracket />
               </span>
-              <h2>Frontend</h2>
+              <h2 className={s.subtitle}>Frontend</h2>
             </div>
             <ProgressBar completedBar={completedBarFront} />
           </div>
@@ -61,7 +69,7 @@ const Skills = () => {
               <span>
                 <Server />
               </span>
-              <h2>Backend</h2>
+              <h2 className={s.subtitle}>Backend</h2>
             </div>
             <ProgressBar completedBar={completedBarBack} />
           </div>
