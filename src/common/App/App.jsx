@@ -8,6 +8,7 @@ import Header from "../../layouts/Header/Header";
 import About from "../../layouts/About/About";
 import Contact from "../../layouts/Contact/Contact";
 import Footer from "../../layouts/Footer/Footer";
+import Navbar from "../../layouts/Navbar/Navbar";
 
 const App = () => {
   /**
@@ -18,6 +19,7 @@ const App = () => {
   }, []);
   return (
     <div className={s.container}>
+      <Navbar />
       <Modal />
       <Header />
       <About />
