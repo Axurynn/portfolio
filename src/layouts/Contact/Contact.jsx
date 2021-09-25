@@ -13,7 +13,7 @@ const Contact = () => {
         <div className={s.division}>
           <div className={s.head}>
             <h1 className={s.title}>Marion Bricout</h1>
-            <h2 className={s.subtitle}>Développeuse backend junior</h2>
+            <h3 className={s.subtitle}>Développeuse backend junior</h3>
           </div>
           <div className={s.illustration}>
             {/* En attendant, trouver mieux! */}
@@ -46,7 +46,7 @@ const Contact = () => {
           </div>
         </div>
         <p className={s.copyright}>
-          &copy; Fait avec <span>&#9825;</span> par Axurynn - 1.0
+          &copy; Fait avec <span>&#9825;</span> par Axurynn - 1.0.0
         </p>
       </div>
     </>
