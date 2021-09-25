@@ -24,3 +24,15 @@
     }
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .progressBarText {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    width: 80%;
+  }
+
+  .progressBarContainer {
+    width: 80%;
+  }
+}

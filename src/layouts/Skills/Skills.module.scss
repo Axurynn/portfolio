@@ -36,3 +36,20 @@
     }
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .skills {
+    margin-bottom: 10em;
+  }
+  .container {
+    display: flex;
+
+    & .content {
+      margin: 0;
+
+      & .contentHeader {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

@@ -46,11 +46,11 @@
 
 @media screen and (min-width: 1000px) {
   .container {
-    width: 1000px;
-    margin: auto;
+    width: 100%;
     align-items: center;
     display: grid;
-    grid-template-columns: 500px 500px;
+    justify-content: space-around;
+    grid-template-columns: 50% 50%;
     grid-template-areas:
       "illustration head"
       "illustration content"
@@ -60,12 +60,18 @@
       grid-area: head;
     }
     & .illustration {
-      width: 400px;
-      height: 225px;
+      width: 450px;
+      height: 250px;
       grid-area: illustration;
     }
     & .content {
       grid-area: content;
+
+      & .text {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        margin-top: 1em;
+      }
       & .stats {
         height: 70px;
         margin: 2rem 0;

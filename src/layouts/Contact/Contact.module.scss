@@ -100,8 +100,12 @@
       grid-area: content;
       & .network {
         height: 50px;
-        & svg path {
-          fill: var(--bg-color);
+        & svg {
+          width: 28px;
+          height: 28px;
+          & path {
+            fill: var(--bg-color);
+          }
         }
       }
       & * {
