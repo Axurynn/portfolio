@@ -49,8 +49,12 @@
     display: flex;
     justify-content: space-around;
     width: 200px;
-    & svg path {
-      fill: var(--text-color);
+    & svg {
+      width: 24px;
+      height: 24px;
+      & path {
+        fill: var(--text-color);
+      }
     }
   }
 }
@@ -70,11 +74,10 @@
 @media screen and (min-width: 1000px) {
   .division {
     background-color: var(--hover-color);
-    padding: 1rem;
+    padding: 2rem 5rem;
     align-items: center;
     border-radius: 10px;
     color: var(--bg-color);
-    width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: 55% 45%;
@@ -91,6 +94,7 @@
     & .illustration {
       grid-area: illustration;
       height: 238.45px;
+      justify-content: flex-end;
     }
     & .title {
       grid-area: title;

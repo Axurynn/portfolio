@@ -55,7 +55,7 @@ const Skills = () => {
           <h1 className={s.title}>Compétences</h1>
         </div>
         <div className={s.container}>
-          <div className={s.content}>
+          <div className={s.contentFront}>
             <div className={s.contentHeader}>
               <span>
                 <CurlyBracket />
@@ -64,7 +64,7 @@ const Skills = () => {
             </div>
             <ProgressBar completedBar={completedBarFront} />
           </div>
-          <div className={s.content}>
+          <div className={s.contentBack}>
             <div className={s.contentHeader}>
               <span>
                 <Server />
