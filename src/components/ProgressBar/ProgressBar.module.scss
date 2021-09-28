@@ -1,7 +1,10 @@
 @import "../../styles/index.scss";
+.container {
+  width: 100%;
+}
 .progressBarText {
   width: 60%;
-  margin: 1rem 0 0.5rem 0;
+  margin: 1rem auto 0.5rem;
 }
 
 .progressBarContainer {
@@ -9,6 +12,7 @@
   width: 60%;
   background-color: var(--bar-color);
   border-radius: 50px;
+  margin: auto;
 
   & .content {
     height: 100%;

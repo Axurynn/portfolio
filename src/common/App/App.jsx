@@ -6,6 +6,7 @@ import Skills from "../../layouts/Skills/Skills";
 import Modal from "../../components/Modal/Modal";
 import Header from "../../layouts/Header/Header";
 import About from "../../layouts/About/About";
+import Projects from "../../layouts/Projects/Projects";
 import Contact from "../../layouts/Contact/Contact";
 import Footer from "../../layouts/Footer/Footer";
 import Navbar from "../../layouts/Navbar/Navbar";
@@ -24,6 +25,8 @@ const App = () => {
       <Header />
       <About />
       <Skills />
+
+      <Projects />
       <Contact />
       <Footer />
     </div>
