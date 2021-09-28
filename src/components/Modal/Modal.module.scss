@@ -1,10 +1,12 @@
+@import "../../styles/index.scss";
 .bg {
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
-  background-color: rgba(149, 149, 149, 0.5);
+  background-color: var(--shadow-color);
+  opacity: 0.5;
 }
 
 .container {

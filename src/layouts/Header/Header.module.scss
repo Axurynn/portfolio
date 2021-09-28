@@ -1,7 +1,6 @@
 @import "../../styles/index.scss";
 
 .header {
-  height: 100vh;
   background-color: var(--bg-color);
 }
 
@@ -19,8 +18,12 @@
   flex-direction: column;
   justify-content: space-between;
 
-  & svg path {
-    fill: var(--text-color);
+  & svg {
+    width: 24px;
+    height: 24px;
+    & path {
+      fill: var(--text-color);
+    }
   }
 }
 
@@ -34,18 +37,90 @@
 .content {
   margin: 3.5rem 0;
 
-  & .title {
-    padding: 2rem 0;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-  }
   & .subtitle {
-    font-weight: 500;
-    font-size: 1.2rem;
+    padding-top: 2rem;
+  }
+  & .text {
+    display: none;
   }
 }
 
 .button {
   margin-left: 2em;
+}
+
+.avatarDesktop {
+  display: none;
+}
+
+.infoScroll {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .header {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .head {
+      & .network {
+        height: 150px;
+        & svg {
+          width: 28px;
+          height: 28px;
+        }
+      }
+      & .avatar {
+        display: none;
+      }
+    }
+
+    & .desktopMiddle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      width: 40%;
+      padding: 4em 0;
+
+      & .text {
+        display: block;
+        margin-top: 1em;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        text-align: justify;
+        & span {
+          font-size: 0.9rem;
+          font-style: italic;
+
+          & sup {
+            font-variant-position: super;
+          }
+          & sub {
+            font-variant-position: sub;
+          }
+        }
+      }
+    }
+    & .infoScroll {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 2rem;
+
+      & svg path {
+        fill: var(--text-color);
+      }
+
+      & .textScroll {
+        margin-left: 1rem;
+      }
+    }
+    & .avatarDesktop {
+      display: block;
+    }
+  }
 }

@@ -1,7 +1,6 @@
 @import "../../styles/index.scss";
 
 .about {
-  height: 100vh;
   background-color: var(--bg-color);
 }
 
@@ -10,13 +9,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-
-  & .title {
-    padding-top: 2rem;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-  }
 }
 
 .illustration {
@@ -34,9 +26,6 @@
   margin-top: 1rem;
 
   & .subtitle {
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
     text-align: center;
   }
   & .text {
@@ -57,11 +46,11 @@
 
 @media screen and (min-width: 1000px) {
   .container {
-    width: 1000px;
-    margin: auto;
+    width: 100%;
     align-items: center;
     display: grid;
-    grid-template-columns: 500px 500px;
+    justify-content: space-around;
+    grid-template-columns: 50% 50%;
     grid-template-areas:
       "illustration head"
       "illustration content"
@@ -71,12 +60,18 @@
       grid-area: head;
     }
     & .illustration {
-      width: 400px;
-      height: 225px;
+      width: 450px;
+      height: 250px;
       grid-area: illustration;
     }
     & .content {
       grid-area: content;
+
+      & .text {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        margin-top: 1em;
+      }
       & .stats {
         height: 70px;
         margin: 2rem 0;

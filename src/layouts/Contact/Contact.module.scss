@@ -1,7 +1,6 @@
 @import "../../styles/index.scss";
 
 .contact {
-  height: 100vh;
   background-color: var(--bg-color);
 }
 
@@ -9,12 +8,6 @@
   margin-top: 2.5rem;
   line-height: 1.5rem;
 
-  & .title {
-    padding-top: 2rem;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-  }
   & .subtitle {
     font-weight: 200;
     font-size: 0.9rem;
@@ -35,11 +28,8 @@
   }
 }
 
-.title {
+.contactTitle {
   margin-top: 1.5rem;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
 }
 
 .content {
@@ -55,19 +45,23 @@
   }
 
   & .network {
-    height: 100px;
     margin-top: 2rem;
     display: flex;
     justify-content: space-around;
     width: 200px;
-    & svg path {
-      fill: var(--text-color);
+    & svg {
+      width: 24px;
+      height: 24px;
+      & path {
+        fill: var(--text-color);
+      }
     }
   }
 }
 
 .copyright {
   margin: 2.5rem 0;
+  padding: 2rem 0;
   font-size: 0.6rem;
   text-align: center;
 
@@ -80,14 +74,13 @@
 @media screen and (min-width: 1000px) {
   .division {
     background-color: var(--hover-color);
-    padding: 1rem;
+    padding: 2rem 5rem;
     align-items: center;
     border-radius: 10px;
     color: var(--bg-color);
-    width: 1000px;
     margin: auto;
     display: grid;
-    grid-template-columns: 550px 450px;
+    grid-template-columns: 55% 45%;
     grid-template-areas:
       "title illustration"
       "head illustration"
@@ -101,20 +94,22 @@
     & .illustration {
       grid-area: illustration;
       height: 238.45px;
+      justify-content: flex-end;
     }
     & .title {
       grid-area: title;
-      font-weight: 700;
-      font-size: 1.5rem;
-      line-height: 1.8rem;
     }
     & .content {
       padding: 2rem;
       grid-area: content;
       & .network {
         height: 50px;
-        & svg path {
-          fill: var(--bg-color);
+        & svg {
+          width: 28px;
+          height: 28px;
+          & path {
+            fill: var(--bg-color);
+          }
         }
       }
       & * {

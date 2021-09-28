@@ -1,0 +1,66 @@
+@import "../../styles/index.scss";
+
+.skills {
+  background-color: var(--bg-color);
+}
+
+.head {
+  margin: 2.5rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  & .contentFront,
+  .contentBack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+
+    & .contentHeader {
+      display: flex;
+      align-items: center;
+
+      & .subtitle {
+        text-align: center;
+      }
+
+      & span {
+        margin-right: 1rem;
+        & svg path {
+          fill: var(--text-color);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .skills {
+    margin: 10em 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    & .contentFront {
+      margin: 0;
+      padding-right: 5rem;
+
+      & .contentHeader {
+        margin-bottom: 2rem;
+      }
+    }
+    & .contentBack {
+      margin: 0;
+      padding-left: 5rem;
+
+      & .contentHeader {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
