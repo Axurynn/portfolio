@@ -20,6 +20,33 @@ const App = () => {
   }, []);
   return (
     <div className={s.container}>
+      <ul className={s.a11yNav}>
+        <li className={s.a11yNavItem}>
+          <a href="#Home" className={s.a11yNavLink}>
+            Passer directement à l'accueil
+          </a>
+        </li>
+        <li className={s.a11yNavItem}>
+          <a href="#About" className={s.a11yNavLink}>
+            À propos
+          </a>
+        </li>
+        <li className={s.a11yNavItem}>
+          <a href="#Skills" className={s.a11yNavLink}>
+            Compétences
+          </a>
+        </li>
+        <li className={s.a11yNavItem}>
+          <a href="#Projects" className={s.a11yNavLink}>
+            Projets
+          </a>
+        </li>
+        <li className={s.a11yNavItem}>
+          <a href="#Contact" className={s.a11yNavLink}>
+            Me contacter
+          </a>
+        </li>
+      </ul>
       <Navbar />
       <Modal />
       <Header />

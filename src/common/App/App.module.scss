@@ -3,6 +3,34 @@
 .container {
   margin: 0 1.5rem;
   letter-spacing: 0.1rem;
+  position: relative;
+
+  & .a11yNav {
+    position: absolute;
+    background-color: var(--bg-color);
+    top: -10em;
+    z-index: 999;
+    width: 100%;
+    // list-style: none;
+
+    & .a11yNavItem {
+      & .a11yNavLink {
+        background-color: var(--bg-color);
+        font-weight: 700;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 0.5rem 0;
+      }
+
+      & .a11yNavLink:focus,
+      .a11yNavLink:hover {
+        top: 10em;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1000px) {
