@@ -1,17 +1,23 @@
+import { IoIosArrowBack } from "react-icons/io";
+
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={className}
+      className="slick-arrow"
       style={{
         ...style,
-        display: "block",
-        background: "var(--decoration-color)",
-        borderRadius: "50%",
+        display: "inline-block",
+        color: "var(--text-color)",
         opacity: "0.8",
+        position: "absolute",
+        left: "-20px",
+        top: "45%",
       }}
       onClick={onClick}
-    />
+    >
+      <IoIosArrowBack />
+    </div>
   );
 }
 
