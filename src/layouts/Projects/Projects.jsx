@@ -1,19 +1,21 @@
 import s from "./Projects.module.scss";
 import "./dots.scss";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { useState, useEffect } from "react";
 
 import portfolio from "../../assets/illu_portfolio.png";
 import projet from "../../assets/fictif.jpg";
 import Button from "../../components/Button/Button";
+import { BsArrowRight } from "react-icons/bs";
+/*! Mise en place d'un carousel (WIP)*/
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useState, useEffect } from "react";
 import SampleNextArrow from "../../components/CarouselArrow/SampleNextArrow/SampleNextArrow";
 import SamplePrevArrow from "../../components/CarouselArrow/SamplePrevArrow/SamplePrevArrow";
-import { BsArrowRight } from "react-icons/bs";
 import { useWindowSize } from "../../utils/windowSize";
 
 const Projects = () => {
+  /*! Mise en place d'un carousel (WIP)*/
   // const { width } = useWindowSize();
   // const settings = {
   //   arrows: true,

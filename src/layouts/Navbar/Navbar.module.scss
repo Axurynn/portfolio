@@ -30,6 +30,10 @@
       & .link {
         padding: 0 2rem;
       }
+      & .link:hover {
+        color: var(--decoration-color);
+        font-weight: 600;
+      }
     }
 
     & .buttons {
