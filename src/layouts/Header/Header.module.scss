@@ -2,6 +2,10 @@
 
 .header {
   background-color: var(--bg-color);
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .head {
@@ -61,6 +65,7 @@
   .header {
     height: 100vh;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
@@ -116,7 +121,7 @@
 
       & svg {
         animation-name: bounce;
-        animation-duration: 1.5s;
+        animation-duration: 1s;
         animation-fill-mode: both;
         animation-iteration-count: infinite;
       }
@@ -139,15 +144,9 @@
 @keyframes bounce {
   0%,
   100% {
-    // -moz-transform: translateY(0);
-    // -ms-transform: translateY(0);
-    // -webkit-transform: translateY(0);
     transform: translateY(0);
   }
   40% {
-    // -moz-transform: translateY(-5px);
-    // -ms-transform: translateY(-5px);
-    // -webkit-transform: translateY(-5px);
-    transform: translateY(-4px);
+    transform: translateY(-10px);
   }
 }

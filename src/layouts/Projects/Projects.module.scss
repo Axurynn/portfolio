@@ -5,9 +5,13 @@
   text-align: center;
 }
 
-.containerCarousel:first-child {
+.containerCarousel {
   border-bottom: 1px solid var(--bar-color);
   padding-bottom: 2em;
+}
+.containerCarousel:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .containerCarousel {
@@ -18,9 +22,14 @@
     margin: 1em 0.3em 0;
   }
 
+  & .labels {
+    margin: 0.5em 0;
+  }
+
   & .illu {
     margin: 0 0.3em;
     height: 210px;
+    width: 100%;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 3px 4px 5px 0px var(--shadow-color);

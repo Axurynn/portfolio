@@ -6,6 +6,8 @@ import { ReactComponent as Arrow } from "../../assets/down-arrow.svg";
 import { AiFillCode } from "react-icons/ai";
 import { GiCoffeeCup } from "react-icons/gi";
 
+import pdf from "../../assets/cv.pdf";
+
 const About = () => {
   const today = new Date();
   const firstDay = new Date("2021-05-24");
@@ -26,50 +28,86 @@ const About = () => {
         <div className={s.head}>
           <h1 className={s.title}>A Propos</h1>
         </div>
-        <div className={s.container}>
+        <div className={s.mainContainer}>
           <div className={s.illustration}>
             {/* En attendant, trouver mieux! Photo by <a href="https://unsplash.com/@emilep?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emile Perron</a> on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
              */}
             <img className={s.picture} src={KeyBoard} alt="keyboard" />
-          </div>
-          <div className={s.content}>
-            <h2 className={s.subtitle}>Qui suis-je ?</h2>
-            <p className={s.text}>
-              Après trois années en tant qu’ingénieur de recherche, j’ai
-              souhaité me reconvertir dans la conception de sites web. La
-              formation intensive dispensée par l’école O’clock m’a permis
-              d’acquérir rapidement toutes les connaissances techniques
-              nécessaires et de les pratiquer quotidiennement, avec de nombreux
-              challenges menés en autonomie ou en pair programming.
-            </p>
-            <div className={s.stats}>
-              <div className={s.coffees}>
-                <p className={s.number}>{numberOfCoffees()}</p>
-                <p className={s.text}>
-                  cafés{" "}
-                  <span>
-                    <GiCoffeeCup />
-                  </span>
-                </p>
-              </div>
-              <div className={s.vscHours}>
-                <p className={s.number}>{numberOfCodingHours()}</p>
-                <p className={s.text}>
-                  heures de code{" "}
-                  <span>
-                    <AiFillCode />
-                  </span>
-                </p>
-              </div>
+            <div className={s.codewars}>
+              <a href="https://www.codewars.com/users/Axurynn">
+                <p className={s.text}>Codewars</p>
+                <img
+                  src="https://www.codewars.com/users/Axurynn/badges/large"
+                  className={s.number}
+                  alt="badge codewars, lien vers mon profil"
+                />
+              </a>
             </div>
           </div>
-          {/* Importe le component "button" qui est paramétrable et réutilisable partout, il suffit de modifier les champs text, Icon et callback (ce qu'il se passe au clic) */}
-          <div className={s.button}>
-            <Button
-              text="Télécharger CV"
-              Icon={Arrow}
-              callback={() => console.log("CV")}
-            />
+          <div className={s.container}>
+            <div className={s.content}>
+              <h2 className={s.subtitle}>Qui suis-je ?</h2>
+              {/* <p className={s.text}>
+                Après trois années en tant qu’ingénieur de recherche, j’ai
+                souhaité me reconvertir dans la conception de sites web. La
+                formation intensive dispensée par l’école O’clock m’a permis
+                d’acquérir rapidement toutes les connaissances techniques
+                nécessaires et de les pratiquer quotidiennement, avec de
+                nombreux challenges menés en autonomie ou en pair programming.
+              </p> */}
+              <p className={s.text}>
+                Après trois années en tant qu’ingénieur de recherche, j'apprends
+                en autonomie les bases en HTML5 & CSS3 et je me passionne pour
+                l'interactivité générée avec JavaScript. Pour consolider les
+                connaissances fraîchement acquises, je décide de me challenger
+                et de réaliser quelques défis sur FrontEndMentor. <br /> <br />
+                Attirée par l'algorithme et la programmation, je décide de me
+                reconvertir dans la conception de sites web. La formation
+                intensive dispensée par l’école O’clock m’a permis d’acquérir
+                rapidement toutes les connaissances techniques nécessaires et de
+                les pratiquer quotidiennement, avec de nombreux challenges menés
+                en autonomie ou en pair programming. Pendant cette formation, je
+                découvre le back, les API et la gestion des data... C'est ce que
+                je veux faire ! Je m'oriente donc vers le développement back end
+                ! <br /> <br />
+                Riche de mes précédentes expériences scientifiques et de mes
+                nouvelles connaissances dans le développement web, je suis
+                aujourd'hui prête à mettre toutes mes compétences à votre
+                service !
+              </p>
+              <div className={s.stats}>
+                <div className={s.coffees}>
+                  <p className={s.number}>{numberOfCoffees()}</p>
+                  <p className={s.text}>
+                    cafés{" "}
+                    <span>
+                      <GiCoffeeCup />
+                    </span>
+                  </p>
+                </div>
+                <div className={s.vscHours}>
+                  <p className={s.number}>{numberOfCodingHours()}</p>
+                  <p className={s.text}>
+                    heures de code{" "}
+                    <span>
+                      <AiFillCode />
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* Importe le component "button" qui est paramétrable et réutilisable partout, il suffit de modifier les champs text, Icon et callback (ce qu'il se passe au clic) */}
+            <div className={s.button}>
+              <a href={pdf} download>
+                <Button
+                  text="Télécharger CV"
+                  Icon={Arrow}
+                  callback={() => {
+                    console.log("cv");
+                  }}
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
