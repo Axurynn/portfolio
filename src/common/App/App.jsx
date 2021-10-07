@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import s from "./App.module.scss";
 import { keepTheme } from "../../utils/themes";
 
@@ -15,6 +15,8 @@ const App = () => {
   /**
    * Au chargement de la page, initialise le thème
    */
+  const [state, setState] = useState(false);
+
   useEffect(() => {
     keepTheme();
   }, []);
@@ -47,14 +49,14 @@ const App = () => {
           </a>
         </li>
       </ul>
-      <Navbar />
+      <Navbar state={state} setState={setState} />
       <Modal />
       <Header />
       <About />
       <Skills />
 
       <Projects />
-      <Contact />
+      <Contact state={state} />
       <Footer />
     </div>
   );

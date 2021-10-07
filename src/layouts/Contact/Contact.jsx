@@ -6,8 +6,18 @@ import { ReactComponent as Twitter } from "../../assets/twitter.svg";
 import { SiMinutemailer } from "react-icons/si";
 import contactAvatarLight from "../../assets/contact-avatar-light.png";
 import contactAvatarDark from "../../assets/contact-avatar-dark.png";
+import { useWindowSize } from "../../utils/windowSize";
 
-const Contact = () => {
+const Contact = ({ state = false }) => {
+  const [togContactAvatar, setTogContactAvatar] = useState(null);
+  const { width } = useWindowSize();
+
+  useEffect(() => {
+    localStorage.getItem("theme") === "theme-dark"
+      ? setTogContactAvatar(contactAvatarDark)
+      : setTogContactAvatar(contactAvatarLight);
+  }, [state]);
+
   return (
     <>
       <div className={s.contact} id="Contact">
@@ -18,9 +28,8 @@ const Contact = () => {
           </div>
           <div className={s.illustration}>
             <img
-              onClick={handleOnClick}
               className={s.picture}
-              src={contactAvatarLight}
+              src={width >= 1000 ? togContactAvatar : contactAvatarLight}
               alt="contactAvatar"
             />
           </div>

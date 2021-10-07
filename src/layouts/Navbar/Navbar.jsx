@@ -1,7 +1,7 @@
 import s from "./Navbar.module.scss";
 import SwitchTheme from "../../components/SwitchTheme/SwitchTheme";
 
-const Navbar = () => {
+const Navbar = ({ state = false, setState = () => {} }) => {
   const links = [
     {
       name: "Accueil",
@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
         <div className={s.buttons}>
           <span>
-            <SwitchTheme />
+            <SwitchTheme state={state} setState={setState} />
           </span>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { ReactComponent as Moon } from "../../assets/moon.svg";
 /**
  * Composant pour gérer le changement de thème
  */
-function SwitchTheme() {
+function SwitchTheme({ state = false, setState = () => {} }) {
   // En gros, initialisation de la variable et de la fonction pour changer cette variable
   const [togClass, setTogClass] = useState("dark");
   // Récupérer le thème enregistré en localStorage
@@ -17,6 +17,7 @@ function SwitchTheme() {
    * Fonction qui gère ce qu'il se passe au click
    */
   const handleOnClick = () => {
+    setState(!state);
     if (localStorage.getItem("theme") === "theme-dark") {
       setTheme("theme-light");
       setTogClass("light");

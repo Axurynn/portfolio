@@ -18,7 +18,7 @@ const Skills = () => {
       text: "CSS",
     },
     {
-      completed: 30,
+      completed: 10,
       text: "React",
     },
     {

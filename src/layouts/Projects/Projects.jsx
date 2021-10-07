@@ -65,7 +65,11 @@ const Projects = () => {
             <img src={image} alt={alt} className={s.illu} />
             <div className={s.content}>
               <h2>{title}</h2>
-              <div className={s.labels}>{labels.map((label) => label)}</div>
+              <div className={s.labels}>
+                {labels.map((label, i) => (
+                  <span key={i}>{label}</span>
+                ))}
+              </div>
               <p className={s.description}>{description}</p>
               <div className={s.button}>
                 <Button
