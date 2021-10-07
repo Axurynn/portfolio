@@ -55,7 +55,11 @@ const Modal = ({ open, setOpen }) => {
             </div>
             <div className={s.links}>
               {data.map(({ Icon, text, anchor }) => (
-                <a className={s.link} href={anchor}>
+                <a
+                  className={s.link}
+                  href={anchor}
+                  onClick={() => setOpen(false)}
+                >
                   <Icon />
                   <p classname={s.linkText}>{text}</p>
                 </a>

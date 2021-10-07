@@ -4,10 +4,13 @@ import App from "./common/App/App";
 import "./styles/reset.scss";
 import "./styles/index.scss";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename="/portfolio">
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

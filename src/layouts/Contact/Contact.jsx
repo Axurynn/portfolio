@@ -1,25 +1,35 @@
 import s from "./Contact.module.scss";
-
+import { useEffect, useState } from "react";
 import { ReactComponent as Github } from "../../assets/github-alt.svg";
 import { ReactComponent as Linkedin } from "../../assets/linkedin-alt.svg";
 import { ReactComponent as Twitter } from "../../assets/twitter.svg";
 import { SiMinutemailer } from "react-icons/si";
-import contactAvatar from "../../assets/contact-avatar.png";
+import contactAvatarLight from "../../assets/contact-avatar-light.png";
+import contactAvatarDark from "../../assets/contact-avatar-dark.png";
+import { useWindowSize } from "../../utils/windowSize";
 
-const Contact = () => {
+const Contact = ({ state = false }) => {
+  const [togContactAvatar, setTogContactAvatar] = useState(null);
+  const { width } = useWindowSize();
+
+  useEffect(() => {
+    localStorage.getItem("theme") === "theme-dark"
+      ? setTogContactAvatar(contactAvatarDark)
+      : setTogContactAvatar(contactAvatarLight);
+  }, [state]);
+
   return (
     <>
-      <div className={s.contact}>
+      <div className={s.contact} id="Contact">
         <div className={s.division}>
           <div className={s.head}>
             <h1 className={s.title}>Marion Bricout</h1>
             <h3 className={s.subtitle}>Développeuse backend junior</h3>
           </div>
           <div className={s.illustration}>
-            {/* En attendant, trouver mieux! */}
             <img
               className={s.picture}
-              src={contactAvatar}
+              src={width >= 1000 ? togContactAvatar : contactAvatarLight}
               alt="contactAvatar"
             />
           </div>

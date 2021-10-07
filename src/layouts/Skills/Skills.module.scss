@@ -12,6 +12,8 @@
 }
 
 .container {
+  display: flex;
+  flex-direction: column-reverse;
   & .contentFront,
   .contentBack {
     display: flex;
@@ -40,15 +42,17 @@
 
 @media screen and (min-width: 1000px) {
   .skills {
-    margin: 10em 0;
+    margin: 7.5em 0 10em;
+    padding-top: 2.5rem;
   }
   .container {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
 
     & .contentFront {
       margin: 0;
-      padding-right: 5rem;
+      padding-left: 5rem;
 
       & .contentHeader {
         margin-bottom: 2rem;
@@ -56,7 +60,7 @@
     }
     & .contentBack {
       margin: 0;
-      padding-left: 5rem;
+      padding-right: 5rem;
 
       & .contentHeader {
         margin-bottom: 2rem;

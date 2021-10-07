@@ -72,6 +72,9 @@
 }
 
 @media screen and (min-width: 1000px) {
+  .contact {
+    margin-top: 10rem;
+  }
   .division {
     background-color: var(--hover-color);
     padding: 2rem 5rem;
@@ -111,10 +114,19 @@
             fill: var(--bg-color);
           }
         }
+        & svg:hover path {
+          fill: var(--hoverContact-color);
+        }
       }
       & * {
         fill: var(--bg-color);
       }
     }
+  }
+  .mail:hover,
+  .mail:hover svg path {
+    color: var(--hoverContact-color);
+    fill: var(--hoverContact-color);
+    font-weight: 600;
   }
 }
