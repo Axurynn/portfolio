@@ -5,7 +5,7 @@ const Navbar = () => {
   const links = [
     {
       name: "Accueil",
-      route: "#Accueil",
+      route: "#Home",
     },
     {
       name: "À propos",
@@ -27,7 +27,9 @@ const Navbar = () => {
   return (
     <>
       <div className={s.container}>
-        <p className={s.text}>Axurynn</p>
+        <a href="#Home">
+          <p className={s.text}>Axurynn</p>
+        </a>
         <div className={s.links}>
           {links.map(({ name, route }, i) => (
             <a key={i} className={s.link} href={route}>

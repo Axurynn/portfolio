@@ -114,10 +114,19 @@
             fill: var(--bg-color);
           }
         }
+        & svg:hover path {
+          fill: var(--hoverContact-color);
+        }
       }
       & * {
         fill: var(--bg-color);
       }
     }
+  }
+  .mail:hover,
+  .mail:hover svg path {
+    color: var(--hoverContact-color);
+    fill: var(--hoverContact-color);
+    font-weight: 600;
   }
 }

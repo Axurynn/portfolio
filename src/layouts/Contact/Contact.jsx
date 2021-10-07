@@ -1,25 +1,26 @@
 import s from "./Contact.module.scss";
-
+import { useEffect, useState } from "react";
 import { ReactComponent as Github } from "../../assets/github-alt.svg";
 import { ReactComponent as Linkedin } from "../../assets/linkedin-alt.svg";
 import { ReactComponent as Twitter } from "../../assets/twitter.svg";
 import { SiMinutemailer } from "react-icons/si";
-import contactAvatar from "../../assets/contact-avatar.png";
+import contactAvatarLight from "../../assets/contact-avatar-light.png";
+import contactAvatarDark from "../../assets/contact-avatar-dark.png";
 
 const Contact = () => {
   return (
     <>
-      <div className={s.contact}>
+      <div className={s.contact} id="Contact">
         <div className={s.division}>
           <div className={s.head}>
             <h1 className={s.title}>Marion Bricout</h1>
             <h3 className={s.subtitle}>Développeuse backend junior</h3>
           </div>
           <div className={s.illustration}>
-            {/* En attendant, trouver mieux! */}
             <img
+              onClick={handleOnClick}
               className={s.picture}
-              src={contactAvatar}
+              src={contactAvatarLight}
               alt="contactAvatar"
             />
           </div>

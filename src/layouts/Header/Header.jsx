@@ -12,7 +12,7 @@ import { ReactComponent as Scroll } from "../../assets/scroll.svg";
 const Header = () => {
   return (
     <>
-      <div className={s.header}>
+      <div className={s.header} id="Home">
         <div className={s.head}>
           <div className={s.network}>
             <a href="https://www.linkedin.com/in/marion-bricout/">

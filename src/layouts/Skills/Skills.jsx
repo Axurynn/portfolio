@@ -50,7 +50,7 @@ const Skills = () => {
   ];
   return (
     <>
-      <div className={s.skills}>
+      <div className={s.skills} id="Skills">
         <div className={s.head}>
           <h1 className={s.title}>Compétences</h1>
         </div>

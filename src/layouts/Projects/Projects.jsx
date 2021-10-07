@@ -52,31 +52,9 @@ const Projects = () => {
       url: "#",
       labels: [<Label text="React" />, <Label text="Sass" />],
     },
-    {
-      image: projet,
-      alt: "projet2",
-      title: "Projet2",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, cum?",
-      url: "#",
-      labels: [
-        <Label text="Sequelize" />,
-        <Label text="JavaScript" />,
-        <Label text="NodeJS" />,
-      ],
-    },
-    {
-      image: projet,
-      alt: "projet3",
-      title: "Projet3",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, cum?",
-      url: "#",
-      labels: [],
-    },
   ];
   return (
-    <>
+    <div className={s.fullContainer} id="Projects">
       <div className={s.head}>
         <h1 className={s.title}>Projets</h1>
       </div>
@@ -101,7 +79,7 @@ const Projects = () => {
         ))}
         {/* </Slider> */}
       </div>
-    </>
+    </div>
   );
 };
 export default Projects;
