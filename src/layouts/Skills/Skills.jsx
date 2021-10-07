@@ -4,28 +4,6 @@ import { ReactComponent as CurlyBracket } from "../../assets/curlyBracket.svg";
 import { ReactComponent as Server } from "../../assets/server.svg";
 
 const Skills = () => {
-  const completedBarFront = [
-    {
-      completed: 85,
-      text: "JavaScript",
-    },
-    {
-      completed: 80,
-      text: "HTML",
-    },
-    {
-      completed: 80,
-      text: "CSS",
-    },
-    {
-      completed: 10,
-      text: "React",
-    },
-    {
-      completed: 75,
-      text: "Git",
-    },
-  ];
   const completedBarBack = [
     {
       completed: 80,
@@ -46,6 +24,28 @@ const Skills = () => {
     {
       completed: 50,
       text: "Sequelize",
+    },
+  ];
+  const completedBarFront = [
+    {
+      completed: 85,
+      text: "JavaScript",
+    },
+    {
+      completed: 80,
+      text: "HTML",
+    },
+    {
+      completed: 80,
+      text: "CSS",
+    },
+    {
+      completed: 10,
+      text: "React",
+    },
+    {
+      completed: 75,
+      text: "Git",
     },
   ];
   return (

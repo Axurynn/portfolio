@@ -56,11 +56,12 @@ const About = () => {
                 nombreux challenges menés en autonomie ou en pair programming.
               </p> */}
               <p className={s.text}>
-                Après trois années en tant qu’ingénieur de recherche, j'apprends
-                en autonomie les bases en HTML5 & CSS3 et je me passionne pour
-                l'interactivité générée avec JavaScript. Pour consolider les
-                connaissances fraîchement acquises, je décide de me challenger
-                et de réaliser quelques défis sur FrontEndMentor. <br /> <br />
+                Après trois années en tant qu’ingénieure de recherche,
+                j'apprends en autonomie les bases en HTML5 & CSS3 et je me
+                passionne pour l'interactivité générée avec JavaScript. Pour
+                consolider les connaissances fraîchement acquises, je décide de
+                me challenger et de réaliser quelques défis sur FrontEndMentor.{" "}
+                <br /> <br />
                 Attirée par l'algorithme et la programmation, je décide de me
                 reconvertir dans la conception de sites web. La formation
                 intensive dispensée par l’école O’clock m’a permis d’acquérir

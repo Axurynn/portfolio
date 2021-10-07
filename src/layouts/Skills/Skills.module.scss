@@ -12,6 +12,8 @@
 }
 
 .container {
+  display: flex;
+  flex-direction: column-reverse;
   & .contentFront,
   .contentBack {
     display: flex;
@@ -46,10 +48,11 @@
   .container {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
 
     & .contentFront {
       margin: 0;
-      padding-right: 5rem;
+      padding-left: 5rem;
 
       & .contentHeader {
         margin-bottom: 2rem;
@@ -57,7 +60,7 @@
     }
     & .contentBack {
       margin: 0;
-      padding-left: 5rem;
+      padding-right: 5rem;
 
       & .contentHeader {
         margin-bottom: 2rem;
