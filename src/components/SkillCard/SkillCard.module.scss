@@ -1,0 +1,43 @@
+@import "../../styles/index.scss";
+
+.containerSkillCard {
+  padding: 1rem;
+  margin: 2rem;
+  width: 180px;
+  height: 130px;
+  border: 1px solid var(--hover-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  box-shadow: 3px 4px 3px 0px var(--hover-color);
+  color: var(--bg-color);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  & .icon {
+    padding-top: 1em;
+    & svg {
+      color: var(--text-color);
+      object-fit: contain;
+      box-sizing: border-box;
+      width: auto;
+      height: 2em;
+    }
+  }
+  & .text {
+    color: var(--text-color);
+    padding: 1em;
+  }
+}
+
+.containerSkillCard::after {
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.containerSkillCard:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 3px 4px 5px 0px var(--hover-color);
+  opacity: 0.9;
+}

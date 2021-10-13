@@ -57,6 +57,12 @@
       & .contentHeader {
         margin-bottom: 2rem;
       }
+
+      & .skillsMap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
     & .contentBack {
       margin: 0;
@@ -64,6 +70,12 @@
 
       & .contentHeader {
         margin-bottom: 2rem;
+      }
+
+      & .skillsMap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
       }
     }
   }

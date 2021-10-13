@@ -92,7 +92,7 @@ const Projects = () => {
                   </div>
                   <div className={s.button}>
                     <Button
-                      text="Code"
+                      text="GitHub"
                       Icon={BsCode}
                       callback={() => document.location.assign(urlCode)}
                     />
