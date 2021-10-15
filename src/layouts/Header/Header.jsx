@@ -1,7 +1,6 @@
 import s from "./Header.module.scss";
 
 import Button from "../../components/Button/Button";
-
 import { ReactComponent as Github } from "../../assets/github-alt.svg";
 import { ReactComponent as Linkedin } from "../../assets/linkedin-alt.svg";
 import { ReactComponent as Twitter } from "../../assets/twitter.svg";
@@ -70,4 +69,5 @@ const Header = () => {
     </>
   );
 };
+
 export default Header;

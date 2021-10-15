@@ -23,7 +23,6 @@ const About = () => {
   };
   return (
     <>
-      {/* code here */}
       <div className={s.about} id="About">
         <div className={s.head}>
           <h1 className={s.title}>A Propos</h1>
@@ -92,13 +91,7 @@ const About = () => {
             {/* Importe le component "button" qui est paramétrable et réutilisable partout, il suffit de modifier les champs text, Icon et callback (ce qu'il se passe au clic) */}
             <div className={s.button}>
               <a href={pdf} download>
-                <Button
-                  text="Télécharger CV"
-                  Icon={Arrow}
-                  callback={() => {
-                    console.log("cv");
-                  }}
-                />
+                <Button text="Télécharger CV" Icon={Arrow} />
               </a>
             </div>
           </div>

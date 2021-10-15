@@ -10,8 +10,8 @@ const Skills = () => {
           <h1 className={s.title}>Compétences</h1>
         </div>
         <div className={s.container}>
-          {data.map(({ title, Icon, skills }) => (
-            <div className={s.content}>
+          {data.map(({ title, Icon, skills }, i) => (
+            <div className={s.content} key={i}>
               <div className={s.contentHeader}>
                 <span>
                   <Icon />

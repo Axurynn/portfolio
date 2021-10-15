@@ -47,4 +47,5 @@ const Navbar = ({ state = false, setState = () => {} }) => {
     </>
   );
 };
+
 export default Navbar;
