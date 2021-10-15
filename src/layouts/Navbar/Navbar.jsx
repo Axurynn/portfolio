@@ -1,5 +1,6 @@
 import s from "./Navbar.module.scss";
 import SwitchTheme from "../../components/SwitchTheme/SwitchTheme";
+import logo from "../../assets/logo.png";
 
 const Navbar = ({ state = false, setState = () => {} }) => {
   const links = [
@@ -28,7 +29,7 @@ const Navbar = ({ state = false, setState = () => {} }) => {
     <>
       <div className={s.container}>
         <a href="#Home">
-          <p className={s.text}>Axurynn</p>
+          <img className={s.img} src={logo} alt="logo" />
         </a>
         <div className={s.links}>
           {links.map(({ name, route }, i) => (
@@ -46,4 +47,5 @@ const Navbar = ({ state = false, setState = () => {} }) => {
     </>
   );
 };
+
 export default Navbar;

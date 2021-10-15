@@ -36,9 +36,13 @@
     border: 1px solid var(--bar-color);
   }
 
-  & .button {
+  & .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    & .button {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 

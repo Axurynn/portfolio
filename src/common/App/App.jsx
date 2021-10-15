@@ -49,15 +49,30 @@ const App = () => {
           </a>
         </li>
       </ul>
-      <Navbar state={state} setState={setState} />
-      <Modal />
-      <Header />
-      <About />
-      <Skills />
-
-      <Projects />
-      <Contact state={state} />
-      <Footer />
+      <nav>
+        <Navbar state={state} setState={setState} />
+        <Modal />
+      </nav>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <section>
+          <About />
+        </section>
+        <section>
+          <Skills />
+        </section>
+        <section>
+          <Projects />
+        </section>
+        <section>
+          <Contact state={state} />
+        </section>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

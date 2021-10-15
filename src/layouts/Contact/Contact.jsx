@@ -24,7 +24,7 @@ const Contact = ({ state = false }) => {
         <div className={s.division}>
           <div className={s.head}>
             <h1 className={s.title}>Marion Bricout</h1>
-            <h3 className={s.subtitle}>Développeuse backend junior</h3>
+            <h3 className={s.subtitle}>Développeuse backend</h3>
           </div>
           <div className={s.illustration}>
             <img

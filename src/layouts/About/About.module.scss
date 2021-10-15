@@ -42,6 +42,10 @@
 
     text-align: justify;
     hyphens: auto;
+
+    & strong {
+      font-style: italic;
+    }
   }
   & .stats {
     display: none;
