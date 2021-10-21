@@ -24,6 +24,9 @@
 
   & .labels {
     margin: 0.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2.5;
   }
 
   & .illu {
