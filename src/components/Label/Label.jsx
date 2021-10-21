@@ -6,9 +6,12 @@ const Label = ({ text }) => {
     s.labelContainer,
     { [`${s.colorReact}`]: text === "React" },
     { [`${s.colorSass}`]: text === "Sass" },
+    { [`${s.colorRedux}`]: text === "Redux" },
+    { [`${s.colorPostgreSQL}`]: text === "PostgreSQL" },
     { [`${s.colorSequelize}`]: text === "Sequelize" },
     { [`${s.colorNode}`]: text === "NodeJS" },
-    { [`${s.colorJavaScript}`]: text === "JavaScript" }
+    { [`${s.colorJavaScript}`]: text === "JavaScript" },
+    { [`${s.colorExpress}`]: text === "Express" }
   );
   return (
     <span className={classes}>

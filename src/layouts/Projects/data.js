@@ -16,11 +16,19 @@ const data = [
   {
     image: projet,
     alt: "projet en cours",
-    title: "Projet de fin de formation",
-    description: "Projet en cours, description à venir.",
+    title: "Mentor.me - En cours de développement.",
+    description:
+      "Réalisé en équipe de 5 développeurs, le projet a pour objectif de créer une plateforme réunissant des profils aux compétences variées souhaitant les partager et/ou en profiter.",
     urlSite: null,
     urlCode: null,
-    labels: [],
+    labels: [
+      <Label text="React" />,
+      <Label text="Sass" />,
+      <Label text="Redux" />,
+      <Label text="NodeJS" />,
+      <Label text="Express" />,
+      <Label text="PostgreSQL" />,
+    ],
   },
 ];
 

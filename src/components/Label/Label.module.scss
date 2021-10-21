@@ -17,6 +17,13 @@
   &Sass {
     background-color: #ffc9e4;
   }
+
+  &Redux {
+    background-color: #c8a7fd;
+  }
+  &PostgreSQL {
+    background-color: #7da0bd;
+  }
   &Sequelize {
     background-color: #a2c2fc;
   }
@@ -25,5 +32,8 @@
   }
   &Node {
     background-color: #96eb96;
+  }
+  &Express {
+    background-color: #aaa;
   }
 }
