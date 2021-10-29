@@ -29,7 +29,7 @@ const Projects = () => {
                       <Button
                         text="Lien"
                         Icon={BsArrowRight}
-                        callback={() => document.location.assign(urlSite)}
+                        callback={() => window.open(urlSite, "_blank")}
                       />
                     </div>
                   )}
@@ -38,7 +38,7 @@ const Projects = () => {
                       <Button
                         text="GitHub"
                         Icon={BsCode}
-                        callback={() => document.location.assign(urlCode)}
+                        callback={() => window.open(urlCode, "_blank")}
                       />
                     </div>
                   )}

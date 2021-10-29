@@ -43,13 +43,25 @@ const Contact = ({ state = false }) => {
               ou me retrouver sur mes réseaux
             </p>
             <div className={s.network}>
-              <a href="https://www.linkedin.com/in/marion-bricout/">
+              <a
+                href="https://www.linkedin.com/in/marion-bricout/"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <Linkedin />
               </a>
-              <a href="https://twitter.com/Drc_Axu">
+              <a
+                href="https://twitter.com/Drc_Axu"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <Twitter />
               </a>
-              <a href="https://github.com/Axurynn">
+              <a
+                href="https://github.com/Axurynn"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <Github />
               </a>
             </div>

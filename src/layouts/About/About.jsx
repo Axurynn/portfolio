@@ -31,7 +31,11 @@ const About = () => {
           <div className={s.illustration}>
             <img className={s.picture} src={KeyBoard} alt="keyboard" />
             <div className={s.codewars}>
-              <a href="https://www.codewars.com/users/Axurynn">
+              <a
+                href="https://www.codewars.com/users/Axurynn"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <p className={s.text}>Codewars</p>
                 <img
                   src="https://www.codewars.com/users/Axurynn/badges/large"
