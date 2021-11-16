@@ -1,5 +1,5 @@
 import portfolio from "../../assets/illu_portfolio.png";
-import projet from "../../assets/fictif.jpg";
+import mentorme from "../../assets/mentorme.png";
 import Label from "../../components/Label/Label";
 
 const data = [
@@ -14,11 +14,11 @@ const data = [
     labels: [<Label text="React" />, <Label text="Sass" />],
   },
   {
-    image: projet,
+    image: mentorme,
     alt: "projet en cours",
-    title: "Mentor.me - En cours de développement.",
+    title: "Mentor.me",
     description:
-      "Réalisé en équipe de 5 développeurs, le projet a pour objectif de créer une plateforme réunissant des profils aux compétences variées souhaitant les partager et/ou en profiter.",
+      "Réalisé en équipe de 5 développeurs, notre idée était de créer une plateforme gratuite réunissant des profils aux compétences variées souhaitant les partager et/ou en profiter. En tant que dev back end, j'ai mis en place l'API de l'application et configuré le serveur en NodeJS/Express",
     urlSite: "https://mentor-me-oclock.netlify.app/",
     urlCode: null,
     labels: [
