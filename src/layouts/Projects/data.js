@@ -11,6 +11,7 @@ const data = [
       "Première version de mon portfolio, codé en ReactJS appris pour l'occasion. Mise en place d'un mode sombre.",
     urlSite: "#Home",
     urlCode: "https://github.com/Axurynn/portfolio",
+    urlDemo: null,
     labels: [<Label text="React" />, <Label text="Sass" />],
   },
   {
@@ -18,9 +19,10 @@ const data = [
     alt: "projet en cours",
     title: "Mentor.me",
     description:
-      "Réalisé en équipe de 5 développeurs, notre idée était de créer une plateforme gratuite réunissant des profils aux compétences variées souhaitant les partager et/ou en profiter. En tant que dev back end, j'ai mis en place l'API de l'application et configuré le serveur en NodeJS/Express",
+      "Réalisé en équipe de 5 développeurs, notre idée était de créer une plateforme gratuite réunissant des profils aux compétences variées souhaitant les partager et/ou en profiter. En tant que dev back end, j'ai mis en place l'API de l'application et configuré le serveur en NodeJS/Express.",
     urlSite: "https://mentor-me-oclock.netlify.app/",
-    urlCode: null,
+    urlCode: "https://github.com/Axurynn/Mentor-me",
+    urlDemo: "https://www.youtube.com/watch?v=2S5FSWNPA5g",
     labels: [
       <Label text="React" />,
       <Label text="Sass" />,

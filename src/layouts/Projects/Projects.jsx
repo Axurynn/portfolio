@@ -3,6 +3,7 @@ import s from "./Projects.module.scss";
 import Button from "../../components/Button/Button";
 import data from "./data";
 import { BsArrowRight, BsCode } from "react-icons/bs";
+import { AiOutlineYoutube } from "react-icons/ai";
 
 const Projects = () => {
   return (
@@ -12,7 +13,19 @@ const Projects = () => {
       </div>
       <div className={s.container}>
         {data.map(
-          ({ image, alt, title, description, urlSite, urlCode, labels }, i) => (
+          (
+            {
+              image,
+              alt,
+              title,
+              description,
+              urlSite,
+              urlCode,
+              urlDemo,
+              labels,
+            },
+            i
+          ) => (
             <article key={i} className={s.containerCarousel} index={i + 1}>
               <img src={image} alt={alt} className={s.illu} />
               <div className={s.content}>
@@ -39,6 +52,15 @@ const Projects = () => {
                         text="GitHub"
                         Icon={BsCode}
                         callback={() => window.open(urlCode, "_blank")}
+                      />
+                    </div>
+                  )}
+                  {urlDemo && (
+                    <div className={s.button}>
+                      <Button
+                        text="Démo"
+                        Icon={AiOutlineYoutube}
+                        callback={() => window.open(urlDemo, "_blank")}
                       />
                     </div>
                   )}
