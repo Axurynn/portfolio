@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.6954566b.chunk.css",
-    "main.js": "/static/js/main.497be4c3.chunk.js",
-    "main.js.map": "/static/js/main.497be4c3.chunk.js.map",
+    "main.js": "/static/js/main.41c59898.chunk.js",
+    "main.js.map": "/static/js/main.41c59898.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5911a89d.js",
     "runtime-main.js.map": "/static/js/runtime-main.5911a89d.js.map",
     "static/js/2.ba876c99.chunk.js": "/static/js/2.ba876c99.chunk.js",
@@ -18,7 +18,7 @@
     "static/media/contact-avatar-dark.9f025578.png": "/static/media/contact-avatar-dark.9f025578.png",
     "static/media/contact-avatar-light.e0382f47.png": "/static/media/contact-avatar-light.e0382f47.png",
     "static/media/curlyBracket.66a04988.svg": "/static/media/curlyBracket.66a04988.svg",
-    "static/media/cv.03cbb155.pdf": "/static/media/cv.03cbb155.pdf",
+    "static/media/cv.8273ef54.pdf": "/static/media/cv.8273ef54.pdf",
     "static/media/down-arrow.67cc5cb2.svg": "/static/media/down-arrow.67cc5cb2.svg",
     "static/media/files.efb74d95.svg": "/static/media/files.efb74d95.svg",
     "static/media/github-alt.450f7ec3.svg": "/static/media/github-alt.450f7ec3.svg",
@@ -40,6 +40,6 @@
     "static/js/runtime-main.5911a89d.js",
     "static/js/2.ba876c99.chunk.js",
     "static/css/main.6954566b.chunk.css",
-    "static/js/main.497be4c3.chunk.js"
+    "static/js/main.41c59898.chunk.js"
   ]
 }
