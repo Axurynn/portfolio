@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { ReactComponent as Github } from "../../assets/github-alt.svg";
 import { ReactComponent as Linkedin } from "../../assets/linkedin-alt.svg";
 import { ReactComponent as Twitter } from "../../assets/twitter.svg";
-import { SiMinutemailer } from "react-icons/si";
 import contactAvatarLight from "../../assets/contact-avatar-light.png";
 import contactAvatarDark from "../../assets/contact-avatar-dark.png";
 import { useWindowSize } from "../../utils/windowSize";
@@ -55,7 +54,7 @@ const Contact = ({ state = false }) => {
           </div>
         </div>
         <div className={s.content}>
-          <p className={s.text}>N'hésitez pas à me contacter !</p>
+          <p className={s.text}>Ou me contacter</p>
           <ContactForm />
         </div>
       </div>
