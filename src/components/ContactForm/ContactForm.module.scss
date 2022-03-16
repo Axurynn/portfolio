@@ -33,6 +33,10 @@
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
+
+    &:hover {
+      background-color: var(--hoverContact-color);
+    }
   }
 
   .sendMessage {
@@ -40,9 +44,9 @@
     width: 60%;
     padding: 1em;
     margin: 1em auto;
-    background-color: var(--scroll-color);
-    color: #34d8c5;
-    border: 2px solid #34d8c5;
+    background-color: #34d8c5;
+    color: var(--scroll-color);
+    border: 2px solid var(--scroll-color);
     border-radius: 10px;
     text-align: center;
     cursor: pointer;

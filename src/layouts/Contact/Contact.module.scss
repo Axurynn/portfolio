@@ -8,38 +8,40 @@
       margin-top: 2em;
     }
 
-    .head {
-      margin-top: 1em;
-      line-height: 1.5rem;
+    .container {
+      .content {
+        .head {
+          margin-top: 1em;
+          line-height: 1.5rem;
 
-      .subtitle {
-        font-weight: 200;
-        font-size: 0.9rem;
-        font-style: italic;
-        padding-bottom: 1rem;
-      }
-    }
+          .subtitle {
+            font-weight: 200;
+            font-size: 0.9rem;
+            font-style: italic;
+            padding-bottom: 1rem;
+          }
+        }
 
-    .content {
-      .text {
-        font-weight: 300;
-        font-size: 0.9rem;
-        line-height: 1.2rem;
-        text-justify: inter-word;
-      }
+        .text {
+          font-weight: 300;
+          font-size: 0.9rem;
+          line-height: 1.2rem;
+          text-justify: inter-word;
+        }
 
-      & .network {
-        margin: 2rem 0;
-        display: flex;
-        justify-content: space-around;
-        width: 200px;
+        & .network {
+          margin: 2rem 0;
+          display: flex;
+          justify-content: space-around;
+          width: 200px;
 
-        & svg {
-          width: 24px;
-          height: 24px;
+          & svg {
+            width: 24px;
+            height: 24px;
 
-          & path {
-            fill: var(--text-color);
+            & path {
+              fill: var(--text-color);
+            }
           }
         }
       }
@@ -62,65 +64,46 @@
 @media screen and (min-width: 1000px) {
   .contact {
     height: 100vh;
+    margin-top: 5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  .card {
-    background-color: var(--hover-color);
-    width: 100%;
-    padding: 3.5rem 5rem;
-    align-items: center;
-    border-radius: 10px;
-    color: var(--bg-color);
-    margin: auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas:
-      "title illustration"
-      "head illustration"
-      "content illustration";
 
-    & .head {
-      margin-top: 0;
-      padding: 0 2rem;
-      grid-area: head;
-    }
-    & .illustration {
-      grid-area: illustration;
-      height: 238.45px;
-      justify-content: flex-end;
-    }
-    & .title {
-      grid-area: title;
-    }
-    & .content {
-      padding: 2rem;
-      grid-area: content;
-      & .network {
-        height: 50px;
-        & svg {
-          width: 28px;
-          height: 28px;
-          & path {
-            fill: var(--bg-color);
+    .card {
+      background-color: var(--hover-color);
+      width: 100%;
+      padding: 0 5em;
+      align-items: center;
+      border-radius: 10px;
+      color: var(--bg-color);
+      margin: auto;
+
+      .container {
+        display: flex;
+        flex-direction: row;
+
+        .content {
+          padding: 2rem;
+          width: 50%;
+
+          .network {
+            height: 50px;
+            svg {
+              width: 28px;
+              height: 28px;
+              path {
+                fill: var(--bg-color);
+              }
+            }
+            svg:hover path {
+              fill: var(--hoverContact-color);
+            }
           }
         }
-        & svg:hover path {
-          fill: var(--hoverContact-color);
-        }
-      }
-      & * {
-        fill: var(--bg-color);
       }
     }
   }
-  .mail:hover,
-  .mail:hover svg path {
-    color: var(--hoverContact-color);
-    fill: var(--hoverContact-color);
-    font-weight: 600;
-  }
+
   .copyright {
     margin: 0;
   }
