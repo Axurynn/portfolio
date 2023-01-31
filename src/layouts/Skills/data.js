@@ -7,8 +7,17 @@ import {
   SiJavascript,
   SiReact,
   SiPostgresql,
+  SiSpring,
+  SiSpringboot,
 } from "react-icons/si";
-import { FaDatabase, FaNodeJs, FaTrello, FaToolbox } from "react-icons/fa";
+import {
+  FaDatabase,
+  FaNodeJs,
+  FaTrello,
+  FaToolbox,
+  FaJava,
+  FaAngular,
+} from "react-icons/fa";
 
 const data = [
   {
@@ -31,14 +40,14 @@ const data = [
         color: "#336791",
       },
       {
-        Icon: SiSequelize,
-        text: "Sequelize",
-        color: "#2379bd",
+        Icon: FaJava,
+        text: "Java",
+        color: "#F00020",
       },
       {
-        Icon: SiMongodb,
-        text: "MongoDB",
-        color: "#13aa52",
+        Icon: SiSpring,
+        text: "Spring",
+        color: "#6cb33e",
       },
     ],
   },
@@ -67,6 +76,11 @@ const data = [
         color: "#61dafb",
       },
       {
+        Icon: FaAngular,
+        text: "Angular",
+        color: "#F00020",
+      },
+      {
         Icon: DiSass,
         text: "Sass",
         color: "#cf649a",
@@ -74,7 +88,7 @@ const data = [
     ],
   },
   {
-    title: "Gestion",
+    title: "Organisation",
     Icon: FaToolbox,
     skills: [
       {
