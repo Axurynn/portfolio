@@ -50,26 +50,18 @@ const About = () => {
               <h2 className={s.subtitle}>Qui suis-je ?</h2>
               <p className={s.text}>
                 Après trois années en tant qu’ingénieure de recherche,
-                j'apprends en autonomie les bases en <strong>HTML5</strong>{" "}
-                &#x26; <strong>CSS3</strong> et je me passionne pour
-                l'interactivité générée avec <strong>JavaScript</strong>. Pour
+                j'apprends en autonomie les bases en HTML5 &#x26; CSS3 et je me
+                passionne pour l'interactivité générée avec JavaScript. Pour
                 consolider les connaissances fraîchement acquises, je décide de
                 me challenger et de réaliser quelques défis sur FrontEndMentor.{" "}
                 <br /> <br />
-                Attirée par l'algorithme et la programmation, je décide de me
-                reconvertir dans la conception de sites web. La formation
-                intensive dispensée par l’école O’clock m’a permis d’acquérir
-                rapidement toutes les connaissances techniques nécessaires et de
-                les pratiquer quotidiennement, avec de nombreux challenges menés
-                en autonomie ou en pair programming. Pendant cette formation, je
-                découvre le <strong>back</strong>, les <strong>API</strong> et
-                la <strong>gestion des data</strong>... C'est ce que je veux
-                faire ! Je m'oriente donc vers le développement back end !{" "}
-                <br /> <br />
-                Riche de mes précédentes expériences scientifiques et de mes
-                nouvelles connaissances dans le développement web, je suis
-                aujourd'hui prête à mettre toutes mes compétences à votre
-                service !
+                Attirée par l'<strong>algorithmie</strong> et la{" "}
+                <strong>programmation</strong>, je décide de me reconvertir dans
+                la conception de logiciels. Riche de mes précédentes expériences
+                scientifiques et de mes nouvelles connaissances dans le
+                développement web, je commence mon expérience professionnelle en
+                tant que <strong>ingénieure développeuse</strong> chez{" "}
+                SopraSteria.
               </p>
               <div className={s.stats}>
                 <div className={s.coffees}>

@@ -9,6 +9,16 @@ import { ReactComponent as Send } from "../../assets/send.svg";
 import { ReactComponent as Scroll } from "../../assets/scroll.svg";
 
 const Header = () => {
+  const today = new Date();
+  const firstDay = new Date("2022-04-26");
+  const monthDiff = () => {
+    return (
+      (today.getFullYear() - firstDay.getFullYear()) * 12 -
+      firstDay.getMonth() +
+      today.getMonth()
+    );
+  };
+
   return (
     <>
       <div className={s.header} id="Home">
@@ -44,17 +54,15 @@ const Header = () => {
           <div className={s.textButton}>
             <div className={s.content}>
               <h1 className={s.title}>
-                Hello, <br /> je suis Marion Bricout
+                Bonjour <br />
+                et bienvenue !
               </h1>
-              <h2 className={s.subtitle}>Développeuse backend</h2>
+              <h2 className={s.subtitle}>
+                Je m'appelle Marion Bricout, je suis développeuse
+              </h2>
               <p className={s.text}>
-                Étant passée depuis peu sur le quai 9{" "}
-                <span>
-                  <sup>3</sup>/<sub>4</sub>
-                </span>
-                , j'ai pu découvrir toute la magie du web. Je souhaite
-                maintenant mettre mes nouvelles compétences au service d'une
-                équipe dynamique et en apprendre davantage.
+                En poste depuis {monthDiff()} mois et passionnée par la
+                programmation et la création de logiciels.
               </p>
             </div>
             {/* Importe le component "button" qui est paramétrable et réutilisable partout, il suffit de modifier les champs text, Icon et callback (ce qu'il se passe au clic) */}
