@@ -23,7 +23,7 @@ const data = [
     description:
       "Réalisé en équipe de 5 développeurs, notre idée était de créer une plateforme gratuite réunissant des profils aux compétences variées souhaitant les partager et/ou en profiter. En tant que dev back end, j'ai mis en place l'API de l'application et configuré le serveur en NodeJS/Express.",
     urlCode: "https://github.com/Axurynn/Mentor-me",
-    urlDemo: "https://www.youtube.com/watch?v=2S5FSWNPA5g",
+    urlDemo: "https://www.youtube.com/live/2S5FSWNPA5g?feature=share&t=4590",
     labels: [
       <Label text="React" />,
       <Label text="Sass" />,
