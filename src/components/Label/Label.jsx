@@ -11,7 +11,9 @@ const Label = ({ text }) => {
     { [`${s.colorSequelize}`]: text === "Sequelize" },
     { [`${s.colorNode}`]: text === "NodeJS" },
     { [`${s.colorJavaScript}`]: text === "JavaScript" },
-    { [`${s.colorExpress}`]: text === "Express" }
+    { [`${s.colorExpress}`]: text === "Express" },
+    { [`${s.colorNextJs}`]: text === "NextJs" },
+    { [`${s.colorNestJs}`]: text === "NestJs" }
   );
   return (
     <span className={classes}>

@@ -1,6 +1,7 @@
 import portfolio from "../../assets/illu_portfolio.png";
 import mentorme from "../../assets/mentorme.png";
 import countries from "../../assets/illu_countries.jpg";
+import event from "../../assets/illu_event.png";
 import Label from "../../components/Label/Label";
 
 const data = [
@@ -42,6 +43,17 @@ const data = [
     urlCode: "https://github.com/Axurynn/countries",
     urlDemo: null,
     labels: [<Label text="React" />, <Label text="Sass" />],
+  },
+  {
+    image: event,
+    alt: "Projet en cours de développement permettant de retrouver les évènements qui se déroule près de chez vous",
+    title: "Event Planner",
+    description:
+      "Projet en binôme permettant de retrouver les évènements qui se déroulent près de chez vous.",
+    urlSite: null,
+    urlCode: null,
+    urlDemo: null,
+    labels: [<Label text="NextJs" />, <Label text="NestJs" />],
   },
 ];
 
