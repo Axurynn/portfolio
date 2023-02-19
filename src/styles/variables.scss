@@ -2,20 +2,20 @@
   --text-color: #0a1b1b;
   --bg-color: #fff;
   --hover-color: #0a1b1b;
-  --scroll-color: #162521;
   --decoration-color: #9eefe5;
   --shadow-color: rgb(226, 226, 226);
+  --shadow-color-project: rgb(226, 226, 226);
   --bar-color: #c0e0de;
   --hoverContact-color: #9eefe5;
 }
 
 .theme-dark {
   --text-color: #fff;
-  --bg-color: #0a1b1b;
+  --bg-color: #0f0f0f;
   --hover-color: #9eefe5;
-  --scroll-color: #050f0f;
   --decoration-color: #9eefe5;
-  --shadow-color: #0b1f1f;
+  --shadow-color: #222222;
+  --shadow-color-project: #0f0f0f;
   --bar-color: #324242;
   --hoverContact-color: #465555;
 }

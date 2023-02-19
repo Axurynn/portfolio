@@ -6,10 +6,11 @@
   width: 100%;
   & .card {
     padding-left: 1rem;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     width: 190px;
     height: 70px;
-    border-bottom: 1px solid var(--bar-color);
+    // border-bottom: 1px solid var(--bar-color);
+    border: 1px solid var(--bar-color);
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -17,7 +18,7 @@
     align-content: center;
     justify-content: flex-start;
     background-color: var(--bg-color);
-    box-shadow: 3px 4px 5px 0px var(--shadow-color);
+    // box-shadow: 3px 4px 5px 0px var(--shadow-color);
     color: var(--bg-color);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 
